@@ -185,8 +185,14 @@ ol {
   gap: 26px;
 }
 .title {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .content__accent {
+  color: #545050;
 }
 .content__list {
   position: relative;
@@ -215,6 +221,7 @@ ol {
 .content__card-link {
   display: block;
   text-decoration: none;
+  color: #fff;
 }
 
 .content__card-link:focus {
@@ -241,8 +248,20 @@ ol {
   flex-grow: 1;
 }
 .content__video-card-title {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-width: 196px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .content__video-card-description {
+  max-width: 196px;
+  line-height: 16.2px;
+  font-weight: 400;
 }
 .content__video-card-thumbnail {
   width: 194px;
