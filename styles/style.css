@@ -55,6 +55,7 @@ ol {
   grid-area: result;
 }
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   padding-bottom: 16px;
@@ -188,6 +189,7 @@ ol {
 .content__accent {
 }
 .content__list {
+  position: relative;
   max-height: 298px;
   overflow: scroll;
   display: flex;
