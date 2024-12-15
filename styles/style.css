@@ -71,28 +71,107 @@ ol {
   gap: 40px;
 }
 .search-form__fieldset {
+  border: none;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .search-form__fieldset-title {
 }
 .search-form__label {
+  display: flex;
+  gap: 5px;
+  width: fit-content;
 }
+
+.search-form__label:hover .search-form__label-text   {
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible){
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__label-text {
 }
 .visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 .search-form__textfield {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  appearance: none;
 }
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: none;
+}
+
 .search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
 }
-.search-form__checkbox {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color:#fff;
 }
 .search-form__pseudo-checkbox {
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 .button {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background: #545050;
+  text-decoration: none;
 }
 .search-form__submit-button {
   flex-grow: 1;
+  padding: 6px 73.5px;
 }
 .content__details {
   grid-area: content__details;
@@ -146,8 +225,10 @@ ol {
   object-position: center;
 }
 .more-button-template {
+
 }
 .more-button {
+  padding: 6px 142px;
 }
 .error-template {
 }
